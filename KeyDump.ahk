@@ -18,7 +18,7 @@ GetCSVKey(k)
     name := GetKeyName(k)
     vk := GetKeyVK(k)
     sc := GetKeySC(k)
-    return Format("""vk{:02x}sc{:03x}"", ""{:02x}"", ""{:03x}"", ""{:s}""`r", vk, sc, vk, sc, name)
+    return Format("""{:s}"", ""{:02x}"", ""{:03x}"", ""{:s}""`r", k, vk, sc, name)
 }
 
 hex := ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"]
